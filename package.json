@@ -1,0 +1,28 @@
+{
+  "name": "qcloud-uploader",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "qcloud uploader plugin for markdown-assistant",
+  "keywords": [
+    "markdown-assistant",
+    "uploader",
+    "qcloud",
+    "tencent-cloud"
+  ],
+  "author":{
+    "name":"Jiajun Chen",
+    "email":"tychenjiajun@live.cn",
+    "url":"https://github.com/tychenjiajun"
+  },
+  "activationCommands": {
+    "atom-workspace": "qcloud-uploader:toggle"
+  },
+  "repository": "https://github.com/tychenjiajun/qcloud-uploader",
+  "license": "GPL-2.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "cos-nodejs-sdk-v5":"^2.0.8"
+  }
+}
