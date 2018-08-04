@@ -23,7 +23,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "cos-nodejs-sdk-v5": "^2.0.8",
+    "cos-nodejs-sdk-v5": "^2.4.0",
     "snyk": "^1.41.1"
   },
   "scripts": {

@@ -1,5 +1,6 @@
 COS = require "cos-nodejs-sdk-v5"
 crypto = require "crypto"
+{ Readable } = require 'stream'
 
 module.exports = class Uploader
 
@@ -27,12 +28,15 @@ module.exports = class Uploader
       SecretKey: @secretKey,
       })
 
+    st = new Readable()
+    st.push(buffer)
+
     params = {
       Bucket: @bucket,
       Region: @region,
       Key: filename,
       ContentLength: buffer.length+1024,
-      Body: buffer
+      Body: st
     }
 
     url = "#{@domain}/#{filename}"
