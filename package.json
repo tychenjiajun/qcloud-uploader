@@ -1,7 +1,7 @@
 {
   "name": "qcloud-uploader",
   "main": "./lib/main",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "qcloud uploader plugin for markdown-assistant",
   "keywords": [
     "markdown-assistant",
